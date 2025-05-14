@@ -1,4 +1,4 @@
-from helpers import get_comment, get_repo_name, print_optional_message
+from github_activity.helpers import get_comment, get_repo_name, print_optional_message
 
 
 def handle_watch(event: dict, *args, **kwargs) -> None:
