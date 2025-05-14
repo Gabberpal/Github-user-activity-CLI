@@ -3,7 +3,7 @@ import argparse
 from github_activity.utils import handle_activity
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description="GitHub recent user activity")
     parser.add_argument("username", help="GitHub username")
     parser.add_argument("--show-messages",
