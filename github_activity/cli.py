@@ -1,6 +1,6 @@
 import requests
 import argparse
-from utils import handle_activity
+from github_activity.utils import handle_activity
 
 
 if __name__ == "__main__":
@@ -20,3 +20,6 @@ if __name__ == "__main__":
     if response.status_code == 200:
         events: list[dict] = response.json()
         handle_activity(events=events, show_messages=show_messages)
+    else:
+        print(f"Failed to fetch data for user {username}\n"
+              f"Status code: {response.status_code}")

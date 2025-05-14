@@ -1,4 +1,4 @@
-def get_comment(event: dict, *args: str) -> str:
+def get_comment(event: dict, *args: str, **kwargs) -> str:
     current = event
     for key in args:
         if not isinstance(current, dict):

@@ -1,4 +1,4 @@
-from handlers import handlers
+from github_activity.handlers import handlers
 
 
 def handle_activity(events: list[dict], show_messages: bool = False) -> None:
